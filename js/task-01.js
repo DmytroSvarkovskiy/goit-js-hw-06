@@ -5,8 +5,8 @@ const liItemQuantity=()=> {
 liItemQuantity();
 
 
-const quantityCategories = (liItem)=> {
-    liItem.forEach(item => {
+const quantityCategories = array=> {
+    array.forEach(item => {
         const title = item.firstElementChild.textContent;
         const quantityElement = item.querySelector('ul').children.length;
         console.log(`Category: ${title}
